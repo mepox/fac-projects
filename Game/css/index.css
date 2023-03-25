@@ -1,0 +1,58 @@
+body {
+    background-color: burlywood;
+}
+
+.centered {
+    text-align: center;
+}
+
+#game-container {    
+    border: 1px dashed black;
+    display: grid;        
+    gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+    margin: auto;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 800px;
+    max-height: 800px;
+    padding: 5px;
+}
+
+.card {
+    border: 2px solid black;    
+}
+
+.card-bg-default {
+    background-color: lightgray;
+}
+
+.card-bg-red {
+    background-color: red;
+}
+
+.card-bg-green {
+    background-color: green;
+}
+
+.card-bg-blue {
+    background-color: blue;
+}
+
+.card-bg-yellow {
+    background-color: yellow;
+}
+
+.card-bg-pink {
+    background-color: pink;
+}
+
+.card-bg-orange {
+    background-color: orange;
+}
+
+.empty-card {
+    background-color: none;
+    border: none;
+}

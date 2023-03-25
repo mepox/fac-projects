@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+	<title>Movie Data Project</title>
+</head>
+
+<body>
+    <header class="centered">
+        <h1>Movie Data Project</h1>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <form id="new-movie-form" onSubmit="addNewMovie();return false;" action="">
+                <h3 class="centered">Add a new Movie</h3>
+                
+                <label for="new-movie-title"><b>Title</b></label>
+                <input type="text" id="new-movie-title" placeholder="Enter the title of the movie" required>
+        
+                <label for="new-movie-plot"><b>Plot</b></label>
+                <input type="text" id="new-movie-plot" placeholder="Enter the plot of the movie" required>
+        
+                <label for="new-movie-cast"><b>Cast</b></label>
+                <input type="text" id="new-movie-cast" placeholder="Enter the cast(s) of the movie, separated by comma" required>
+        
+                <label for="new-movie-runtime"><b>Runtime (minutes)</b></label>
+                <input type="text" id="new-movie-runtime" placeholder="Enter the runtime of the movie in minutes" required>
+        
+                <label for="new-movie-rating"><b>Rating</b></label>
+                <input type="text" id="new-movie-rating" placeholder="Enter the rating of the movie (0-10)" required>
+        
+                <label for="new-movie-year"><b>Year</b></label>
+                <input type="text" id="new-movie-year" placeholder="Enter the year of the movie" required>
+        
+                <button id="add-new-movie-button">Add new movie</button>
+            </form>
+        </div>
+        <div class="grid-item">
+            <div id="sorting-buttons" class="centered">
+                <button class="sorting-button" onclick="sortByNewest()">Sort By Newest</button>
+                <button class="sorting-button" onclick="sortByOldest()">Sort By Oldest</button>
+            </div>
+
+            <div id="movies">        
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>

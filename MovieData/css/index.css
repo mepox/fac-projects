@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(56, 74, 113);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    margin: 1% auto;
+}
+
+/* Header */
+
+header h1 {
+    color: white;
+}
+
+/* New movie form */
+
+#new-movie-form {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 black;
+    margin: auto;
+    padding: 16px;
+    width: 50%;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+#add-new-movie-button {
+    background-color: seagreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    margin: 10px 0;    
+    padding: 10px 0;
+    width: 100%;    
+}
+
+#add-new-movie-button:hover {
+    background-color: darkgreen;
+}
+
+/* Display the movies */
+
+.sorting-button {
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.sorting-button:hover {
+    background-color: dodgerblue;
+}
+
+.movie-card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 black;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.movie-casts-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.movie-casts-list-item {
+    margin: 20px;
+}
+
+.movie-stats {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delete-button-container {
+    margin: 20px;
+}
+
+.delete-button {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;    
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+/* Media */
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #new-movie-form {
+        width: 90%;
+    }
+
+    .movie-card {
+        width: 90%;
+    }
+}
