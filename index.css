@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.centered {
+    text-align: center;
+}
+
+#title {
+    color: white;
+}
+
+#links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+}
+
+#links button {
+    color: white;
+    background-color: rgb(39, 140, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    margin: 1em;
+    padding: 1em 1em;    
+}
+
+#links button:hover {
+    background-color: rgb(30, 71, 255);
+}
