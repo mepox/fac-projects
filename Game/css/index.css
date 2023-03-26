@@ -2,26 +2,23 @@ body {
     background-color: burlywood;
 }
 
-.centered {
-    text-align: center;
+header {
+    text-align: center;   
 }
 
 #game-container {    
+    aspect-ratio: 0.75;
     border: 1px dashed black;
     display: grid;        
     gap: 5px;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: space-evenly;
-    margin: auto;
-    min-width: 600px;
-    max-width: 600px;
-    min-height: 800px;
-    max-height: 800px;
-    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;    
+    justify-content: space-evenly;    
+    margin: auto;   
+    width: 100%;    
 }
 
 .card {
-    border: 2px solid black;    
+    border: 2px solid black;
 }
 
 .card-bg-default {
@@ -55,4 +52,10 @@ body {
 .empty-card {
     background-color: none;
     border: none;
+}
+
+@media screen and (min-width: 620px){
+    #game-container {
+        width: 600px;       
+    }
 }
