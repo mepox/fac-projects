@@ -44,10 +44,10 @@ function addShowcaseCard(rootDiv, title, image, url) {
     showcaseCard += "<div class='showcase-card' onclick='window.open(\"" + url + "\")'>";
 
     /* Add title */
-    showcaseCard += "<div class='showcase-card-title centered'><h3>" + title + "</h3></div>";
+    showcaseCard += "<div class='showcase-card-title'><h3>" + title + "</h3></div>";
 
     /* Add image */
-    showcaseCard += "<div class='showcase-card-image centered'>" +
+    showcaseCard += "<div class='showcase-card-image'>" +
                     "<img src='" + image + "' alt='Showcase Card Image'>" +
                     "</div>";
 

@@ -1,67 +1,69 @@
 body {
     background-color: dodgerblue;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vh 1vw;
 }
 
-.centered {
+header h1 {
+    color: white;
     text-align: center;
 }
 
-/* Intro */
+.grid-container {
+    display: grid;
+    row-gap: 3vh;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+/* Cards */
 
 .card {
     background-color: white;
     border: 1px solid black;
     box-shadow: 0 1px 4px 0 black;
-    padding: 1% 2%;
-    margin: 2% auto;
-    max-width: 50%;    
+    max-width: 700px;    
+    padding: 15px;
 }
 
 .card-title {
     color: black;
+    text-align: center;
 }
 
 .card-hr {
     border: 1px solid black;
     height: 1px;
-    margin: 3% auto;
     max-width: 50%;
 }
 
 .card-content {
     color: black;
-    font-size: 1.1em;
-}
-
-/* Divider */
-
-.divider {
-    border: 1px solid white;
-    margin: 2% auto;
-    max-width: 30%;
+    font-size: 1.1rem;
+    padding: 5px;
 }
 
 /* Showcase */
 
-#showcase-title {
-    color:white;
+#showcase h1 {
+    color: white;
+    text-align: center;
 }
 
-#showcase-container {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .showcase-card {
     background-color: white;
     border: 3px solid black;
-    box-shadow: 0 1px 4px 0 black;
-    flex: 33%;
-    padding: 1% 0;
-    margin: 10px;
-    max-width: 33%;
+    flex: 30%;
+    margin-top: 2vh;
+    max-width: 30%;
+    padding: 1vw;    
 }
 
 .showcase-card:hover {
@@ -71,32 +73,26 @@ body {
 
 .showcase-card-title {
     color: black;
-    margin: 2% auto;
+    text-align: center;
 }
 
 .showcase-card-image img {
     border: 1px solid black;
-    box-sizing: border-box;
-    /*padding: 1em 1em;    */
-    max-width: 50%;
+    max-width: 100%;
 }
 
 /* Media */
 
-@media screen and (max-width: 1500px) {
-    .card {
-        max-width: 65%;
+@media screen and (max-width: 1200px) {
+    .showcase-card {
+        flex: 40%;
+        max-width: 40%;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .card {
-        margin: 2% auto;
-        max-width: 80%;
-    }
-
+@media screen and (max-width: 800px) {
     .showcase-card {
-        flex: 45%;
-        max-width: 45%;
+        flex: 100%;
+        max-width: 95%;
     }
 }

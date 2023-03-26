@@ -8,63 +8,57 @@
 	<title>Application Website</title>
 </head>
 
-<body>
-    <section id="intro">
-        <article id="aboutme" class="centered">
-            <div class="card">
-                <div class="card-title">
-                    <h2>About Me</h2>                    
-                </div>
-                <hr class="card-hr"></hr>
-                <div class="card-content">
-                    <p>An enthusiastic Software Developer and Indie Game Developer with years 
-                        of hands-on experience in various personal and commercial projects.</p>
-                    <p>Self-motivated and always eager to learn about new technologies and frameworks, 
-                        I thrive on challenges and enjoy working collaboratively with others to develop innovative solutions that meet and exceed expectations.</p>
-                </div>
+<body class="grid-container">
+    <header>
+        <h1>Application Website</h1>
+    </header>
+
+    <section class="grid-container">
+        <article id="aboutme" class="card">            
+            <div class="card-title">
+                <h2>About Me</h2>                    
             </div>
+            <hr class="card-hr"></hr>
+            <div class="card-content">
+                <p>An enthusiastic Software Developer and Indie Game Developer with years 
+                    of hands-on experience in various personal and commercial projects.</p>
+                <p>Self-motivated and always eager to learn about new technologies and frameworks, 
+                    I thrive on challenges and enjoy working collaboratively with others to develop innovative solutions that meet and exceed expectations.</p>
+            </div>            
         </article>
-        <article id="career" class="centered">
-            <div class="card">
-                <div class="card-title">
-                    <h2>Career as a Web Developer</h2>                    
-                </div>
-                <hr class="card-hr"></hr>
-                <div class="card-content">
-                    <p>I am applying for the programme to learn more about Web Development as I have always been interested in this field.</p>
-                    <p>I enjoy the challenges it gives and that it let me use my creative problem-solving skills. Also, I would like to improve my HTML, CSS and JavaScript skills too, 
-                        so I can make a better looking and more user friendly websites.</p>
-                    <p>Unfortunately, I found this programme just a few days before the latest deadline so I had only a few days to complete the projects, but I managed to 
-                        complete all of them. They are all written from scratch, no external libraries or frameworks were used.</p>
-                </div>
+
+        <article id="career" class="card">            
+            <div class="card-title">
+                <h2>Career as a Web Developer</h2>                    
             </div>
+            <hr class="card-hr"></hr>
+            <div class="card-content">
+                <p>I am applying for the programme to learn more about Web Development as I have always been interested in this field.</p>
+                <p>I enjoy the challenges it gives and that it let me use my creative problem-solving skills. Also, I would like to improve my HTML, CSS and JavaScript skills too, 
+                    so I can make a better looking, user friendly and responsive websites.</p>
+                <p>Unfortunately, I found this programme just a few days before the latest deadline so I had only a few days to complete the projects. I managed to 
+                    complete all of them by focusing on the requirements. I enjoyed the journey and already learnt a lot.</p>
+                <p>All projects are written from scratch, no external libraries or frameworks were used.</p>
+            </div>            
+        </article>
+
+        <article id="source-code" class="card">
+            <div class="card-title">
+                <h2>Source Code</h2>
+            </div>
+            <hr class="card-hr"></hr>
+            <div class="card-content">
+                <p>Source Code for this website is available on GitHub:
+                    <a href="https://github.com/mepox/fac-projects/tree/main/Website" target="_blank">Click here to visit</a>
+                </p>
+            </div>            
         </article>
     </section>
-
-    <hr class="divider">
 
     <section id="showcase">
-        <div id="showcase-container">            
-        </div>
-    </section>
-
-    <hr class="divider">
-
-    <section id="sourcecode">
-        <article class="centered">
-            <div class="card">
-                <div class="card-title">
-                    <h2>Source Code</h2>
-                </div>
-                <hr class="card-hr"></hr>
-                <div class="card-content">
-                    <p>Source Code for this website is available on GitHub:
-                        <a href="https://github.com/mepox/fac-projects/tree/main/Website" target="_blank">Click here to visit</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-    </section>
+        <h1>Projects Showcase</h1>
+        <div id="showcase-container" class="flex-container"></div>
+    </section>    
     
     <script src="js/index.js"></script>
     <script>onStart();</script>
