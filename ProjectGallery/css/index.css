@@ -12,6 +12,7 @@ p.bold {
 }
 
 /* Header */
+
 header h1 {
     color:white;
 }
@@ -19,10 +20,10 @@ header h1 {
 /* Cards */
 
 #card-container {
-    align-items: flex-start;    
+    align-items: flex-start;
     display: flex;    
-    flex-wrap: wrap;
-    justify-content: center;    
+    flex-wrap: wrap;    
+    justify-content: space-around;
 }
 
 .card {
@@ -30,29 +31,33 @@ header h1 {
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 black;
-    margin: 1% 1%;
-    flex: 40%;
-    max-width: 40%;
+    margin-top: 3vh;    
+    max-width: 35%;
+    padding: 1vw;
+}
+
+.card-image {
+    margin: 0 2vw;
 }
 
 .card-image img {
     border: 1px solid black;
-    margin: 15px 0;
-    width: 50%;    
+    max-width: 100%;
 }
 
-.card-button {
-    margin: 15px 0;
+.card-button {    
+    margin: 2vh 0;
 }
 
 .description-button {
     background-color: dodgerblue;
-    border: 1px solid black;
+    border: 1px solid black;    
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-size: 1.1em;
-    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 .description-button:hover {
@@ -60,13 +65,17 @@ header h1 {
 }
 
 .card-description {
-    margin: 15px; 
+    margin: 2vh 1vw;
+}
+
+.card-description ul {   
+    padding-left: 20px;
 }
 
 /* Media */
+
 @media screen and (max-width: 1200px) {
-    .card {
-        flex: 100%;
-        max-width: 100%;
+    .card {        
+        max-width: 90%;
     }
 }

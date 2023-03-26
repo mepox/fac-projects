@@ -122,7 +122,7 @@ function addCard(container, title, image, description, link) {
 
     /* add description */
     card += "<div class='card-description' style='display:none'>" + description +
-            "<span><b>Link: </b></span>" + "<a href='" + link + "' target='_blank'>Click here to visit the project</a>" +
+            "<p><b>Link: </b>" + "<a href='" + link + "' target='_blank'>Click here to visit the project</a></p>" +
             "</div>";
 
     /* close card div */
