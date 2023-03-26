@@ -54,15 +54,18 @@ header h1 {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 700px;    
 }
 
 .showcase-card {
+    aspect-ratio: 1;
     background-color: white;
-    border: 3px solid black;
-    flex: 30%;
+    border: 3px solid black;    
+    flex: 25%;
     margin-top: 2vh;
-    max-width: 30%;
+    max-width: 25%;    
     padding: 1vw;    
 }
 
@@ -76,6 +79,10 @@ header h1 {
     text-align: center;
 }
 
+.showcase-card-image {
+    margin: 0 2vw;
+}
+
 .showcase-card-image img {
     border: 1px solid black;
     max-width: 100%;
@@ -83,16 +90,9 @@ header h1 {
 
 /* Media */
 
-@media screen and (max-width: 1200px) {
-    .showcase-card {
-        flex: 40%;
-        max-width: 40%;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .showcase-card {
-        flex: 100%;
-        max-width: 95%;
+        max-width: 40%;
+        flex: 40%;
     }
 }
