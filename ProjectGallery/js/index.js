@@ -26,7 +26,8 @@ function addCards() {
                     "<li>Somewhere on the page, the user can see today’s date. The date should always be correct. " +
                     "You’ll need to use JavaScript to generate the date, and DOM manipulation to display it.</li>" +
                     "</ul>";
-    addCard(container, title, image, description);
+    let link = "https://mepox.github.io/";                 
+    addCard(container, title, image, description, link);
 
     /* Movie Data */
     
@@ -41,7 +42,8 @@ function addCards() {
                     "<li>Allow the user to affect the display of the data by interacting with the webpage</li>" +
                     "<li>Allow the user to update the data stored in the object by interacting with the webpage</li>" +
                     "</ul>";
-    addCard(container, title, image, description);
+    link = "https://mepox.github.io/fac-projects/MovieData/";
+    addCard(container, title, image, description, link);
 
     /* Application Website */
 
@@ -66,15 +68,17 @@ function addCards() {
                     "<li>DOM event listeners for user interaction (e.g. click, keydown)</li>" +
                     "<li>DOM updates in response to user interaction (e.g. showing/hiding an element, changing text or styles)</li>" +
                     "</ul>";
-
-    addCard(container, title, image, description);
+    link = "https://mepox.github.io/fac-projects/Website/";
+    addCard(container, title, image, description, link);
 
     /* Game Project */
 
     title = "Simple Memory Game";
     image = "game.png";
-    description = "This is a Simple Memory Game for the 'Game' project.";
-    addCard(container, title, image, description);
+    description = "<p>This is a Simple Memory Game for the 'Game' project.</p>" + 
+                    "<p>Made with HTML, CSS and JavaScript. No external libraries/frameworks were used.</p>";
+    link = "https://mepox.github.io/fac-projects/Game/";
+    addCard(container, title, image, description, link);
 
     /* Project Gallery */
 
@@ -91,10 +95,11 @@ function addCards() {
                     "<li>Display the cards in a single column on mobile devices</li>" +
                     "<li>Have a clickable button on each card that opens and closes the description text</li>" +
                     "</ul>";
-    addCard(container, title, image, description);
+    link = "https://mepox.github.io/fac-projects/ProjectGallery/";
+    addCard(container, title, image, description, link);
 }
 
-function addCard(container, title, image, description) {    
+function addCard(container, title, image, description, link) {    
     image = IMG_PATH + image;
 
     /* add card div */
@@ -116,7 +121,9 @@ function addCard(container, title, image, description) {
             "</div>";
 
     /* add description */
-    card += "<div class='card-description' style='display:none'>" + description + "</div>";
+    card += "<div class='card-description' style='display:none'>" + description +
+            "<span><b>Link: </b></span>" + "<a href='" + link + "' target='_blank'>Click here to visit the project</a>" +
+            "</div>";
 
     /* close card div */
     card += "</div>";

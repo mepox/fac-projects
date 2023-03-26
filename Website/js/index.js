@@ -11,27 +11,27 @@ function addShowcaseCards() {
 
     let title = "Portfolio Website";
     let image = "portfolio.png";
-    let url = "http://www.google.com";
+    let url = "https://mepox.github.io/";
     addShowcaseCard(rootDiv, title, image, url);
 
     title = "Project Gallery";
     image = "project-gallery.png";
-    url = "http://www.google.com";
+    url = "https://mepox.github.io/fac-projects/ProjectGallery/";
     addShowcaseCard(rootDiv, title, image, url);
 
     title = "Movie Data Project";
     image = "movie-data.png";
-    url = "http://www.google.com";
+    url = "https://mepox.github.io/fac-projects/MovieData/";
     addShowcaseCard(rootDiv, title, image, url);
 
     title = "Application Website";
     image = "application-website.png";
-    url = "http://www.google.com";
+    url = "https://mepox.github.io/fac-projects/Website/";
     addShowcaseCard(rootDiv, title, image, url);
 
     title = "Simple Memory Game";
     image = "game.png";
-    url = "http://www.google.com";
+    url = "https://mepox.github.io/fac-projects/Game/";
     addShowcaseCard(rootDiv, title, image, url);
 }
 
