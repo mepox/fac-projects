@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <header class="centered">
-        <h1>Movie Data Project</h1>
+    <header>
+        <h1 class="centered">Movie Data Project</h1>
     </header>
 
-    <div class="grid-container">
+    <div class="grid-container"> 
         <div class="grid-item">
             <form id="new-movie-form" onSubmit="addNewMovie();return false;" action="">
                 <h3 class="centered">Add a new Movie</h3>
@@ -35,10 +35,12 @@
         
                 <label for="new-movie-year"><b>Year</b></label>
                 <input type="text" id="new-movie-year" placeholder="Enter the year of the movie" required>
-        
-                <button id="add-new-movie-button">Add new movie</button>
+                
+                <div id="new-movie-button-container" class="centered">
+                    <button id="new-movie-button">Add new movie</button>
+                </div>
             </form>
-        </div>
+        </div>    
         <div class="grid-item">
             <div id="sorting-buttons" class="centered">
                 <button class="sorting-button" onclick="sortByNewest()">Sort By Newest</button>
@@ -47,7 +49,7 @@
 
             <div id="movies">        
             </div>
-        </div>
+        </div>        
     </div>
     
     <script src="js/index.js"></script>
